@@ -76,6 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608914739066</updated>
       <workItem from="1608914740374" duration="6059000" />
+      <workItem from="1609091900965" duration="169000" />
     </task>
     <servers />
   </component>
@@ -83,10 +84,11 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="101" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608915510519">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="373" y="253" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609092066633">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="101" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1608915510519" />
+    <state x="373" y="253" key="#com.intellij.execution.impl.EditConfigurationsDialog/3840.-192.1280.696/0.0.2560.1400@0.0.2560.1400" timestamp="1609092066633" />
     <state x="422" y="96" key="FileChooserDialogImpl" timestamp="1608915333327">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
