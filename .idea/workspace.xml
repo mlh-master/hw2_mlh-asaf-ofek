@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -19,9 +26,31 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/HW2_Answers.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ext_Functions.py" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Ext_Functions">
+    <configuration name="Ext_Functions" type="PythonConfigurationType" factoryName="Python">
+      <module name="HW2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\ofeka\anaconda3\envs\bm-336546\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ext_Functions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="HW2_Answers" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="HW2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -66,6 +95,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.HW2_Answers" />
+      <item itemvalue="Python.Ext_Functions" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -77,6 +110,7 @@
       <updated>1608914739066</updated>
       <workItem from="1608914740374" duration="6059000" />
       <workItem from="1609091900965" duration="169000" />
+      <workItem from="1609598577002" duration="488000" />
     </task>
     <servers />
   </component>
@@ -84,14 +118,16 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="373" y="253" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609092066633">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="-1435" y="785" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609598777329">
+      <screen x="-1680" y="610" width="1680" height="969" />
     </state>
+    <state x="-1435" y="785" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/-1680.610.1680.969@-1680.610.1680.969" timestamp="1609598777329" />
     <state x="101" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1608915510519" />
     <state x="373" y="253" key="#com.intellij.execution.impl.EditConfigurationsDialog/3840.-192.1280.696/0.0.2560.1400@0.0.2560.1400" timestamp="1609092066633" />
-    <state x="422" y="96" key="FileChooserDialogImpl" timestamp="1608915333327">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="-1126" y="747" key="FileChooserDialogImpl" timestamp="1609598772737">
+      <screen x="-1680" y="610" width="1680" height="969" />
     </state>
+    <state x="-1126" y="747" key="FileChooserDialogImpl/0.0.1280.680/-1680.610.1680.969@-1680.610.1680.969" timestamp="1609598772737" />
     <state x="422" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1608915333327" />
     <state width="1224" height="160" key="GridCell.Tab.0.bottom" timestamp="1608977266352">
       <screen x="0" y="0" width="1280" height="680" />
