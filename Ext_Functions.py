@@ -34,7 +34,8 @@ def nan2num(dataframe):
     c_cdf = dataframe
     for column in dataframe.columns:
         if column == 'Age':
-            i=0
+            avg_age = pd.Series.mean(dataframe[column])
+            c_cdf[column].replace(to_replace= np.nan , value=50, inplace = True)
         else:
             replacing_value = np.random.choice(dataframe[column])
             c_cdf[column].replace(to_replace= np.nan , value=replacing_value, inplace = True)
