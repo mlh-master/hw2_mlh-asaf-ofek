@@ -166,56 +166,17 @@ def get_logreg_score(model, X_train_gs, X_test_gs, y_train_gs, y_test_gs):
 
 from sklearn import metrics
 # function that prints different parameters to evaluate the model 
-def parameter_evaluation(y_test,y_train,y_test_pred,y_train_pred, y_test_prob, y_train_prob):
+def parameter_evaluation(y_test,y_train,y_test_pred,y_train_pred):
     print('Test set results:')
     print("Accuracy is: " + str("{0:.2f}".format(100 * metrics.accuracy_score(y_test, y_test_pred))) + "%")
 #     print("Precision is: " + str("{0:.2f}".format(100 * metrics.precision_score(y_test, y_test_pred))) + "%")
 #     print("recall is: " + str("{0:.2f}".format(100 * metrics.recall_score(y_test, y_test_pred))) + "%")
     print("F1 score is: " + str("{0:.2f}".format(100 * metrics.f1_score(y_test, y_test_pred, average='macro'))) + "%")
-    print("AUC is: " + str("{0:.2f}".format(100 * metrics.roc_auc_score(y_test,y_test_prob[:, 1]))) + "%"+'\n')
+    print("AUC is: " + str("{0:.2f}".format(100 * metrics.roc_auc_score(y_test,y_test_pred))) + "%"+'\n')
     print('Train set results:')
     print("Accuracy is: " + str("{0:.2f}".format(100 * metrics.accuracy_score(y_train, y_train_pred))) + "%")
 #     print("Train precision is: " + str("{0:.2f}".format(100 * metrics.precision_score(y_train, y_train_pred))) + "%")
 #     print("Train recall is: " + str("{0:.2f}".format(100 * metrics.recall_score(y_train, y_train_pred))) + "%")
     print("F1 score is: " + str("{0:.2f}".format(100 * metrics.f1_score(y_train, y_train_pred, average='macro'))) + "%")
-    print("AUC is: " + str("{0:.2f}".format(100 * metrics.roc_auc_score(y_train,y_train_prob[:, 1]))) + "%")
+    print("AUC is: " + str("{0:.2f}".format(100 * metrics.roc_auc_score(y_train,y_train_pred))) + "%")
     return
-
-from sklearn.metrics import roc_curve, auc
-from sklearn.metrics import f1_score, precision_score, recall_score, confusion_matrix
-
-def lr_svm_model_comparison(model_lr, model_svm, X_train_ohv, X_test_ohv, y_train_ohv, y_test_ohv):
-    y_pred_lr = model_lr.decision_function(X_test_ohv)
-    lr_fpr, lr_tpr, threshold = roc_curve(y_test_ohv, y_pred_lr)
-    y_pred_lr_train = (model_lr.predict(X_train_ohv))
-    y_pred_lr_test = (model_lr.predict(X_test_ohv))
-    y_pred_proba_lr_train = (model_lr.predict_proba(X_train_ohv))
-    y_pred_proba_lr_test = (model_lr.predict_proba(X_test_ohv))
-    auc_lr = metrics.roc_auc_score(y_test_ohv,y_pred_proba_lr_test[:, 1])
-
-    y_pred_svm = model_svm.decision_function(X_test_ohv)
-    svm_fpr, svm_tpr, threshold = roc_curve(y_test_ohv, y_pred_svm)
-    y_pred_svm_train = (model_svm.predict(X_train_ohv))
-    y_pred_svm_test = (model_svm.predict(X_test_ohv))
-    y_pred_proba_svm_train = (model_svm.predict_proba(X_train_ohv))
-    y_pred_proba_svm_test = (model_svm.predict_proba(X_test_ohv))
-    auc_svm = metrics.roc_auc_score(y_test_ohv,y_pred_proba_svm_test[:, 1])
-
-    plt.figure(figsize = (5,5), dpi = 100)
-    plt.title('ROC Curve')
-    plt.plot(svm_fpr, svm_tpr, linestyle = '-', label = 'SVM (auc=%0.3f)' %auc_svm)
-    plt.plot(lr_fpr, lr_tpr,marker='.' ,label = 'Logistic Reg (auc=%0.3f)' %auc_lr)
-    plt.xlabel('False Positive Rate -->')
-    plt.ylabel('True Positive Rate -->')
-    plt.legend()
-    plt.show()
-
-    print('Logistic Regression Results:')
-    parameter_evaluation(y_test_ohv,y_train_ohv,y_pred_lr_test,y_pred_lr_train, y_pred_proba_lr_test, y_pred_proba_lr_train)
-
-    print()
-    print('SVM Results:')
-    parameter_evaluation(y_test_ohv,y_train_ohv,y_pred_svm_test,y_pred_svm_train, y_pred_proba_svm_test, y_pred_proba_svm_train)
-    return
-
-    
